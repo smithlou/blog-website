@@ -115,3 +115,4 @@ def logout():
     response = RedirectResponse(url="/users/login", status_code=303)
     response.delete_cookie(db.COOKIE_NAME)
     return response
+    
